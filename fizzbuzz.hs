@@ -4,7 +4,8 @@ The usual FizzBuzz code
 
 module Main where
 
-main = mapM_ putStrLn $ map fizzbuzz [1..100]
+main = do
+  mapM_ putStrLn $ map fizzbuzz [1..100]
 
 fizzbuzz :: Int -> String
 fizzbuzz x
