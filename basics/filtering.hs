@@ -9,5 +9,5 @@ import Data.Char
 
 main = do
   let input = "aBCde"
-  let output = length (filter isLower input)
+  let output = length(filter isLower input)
   print output
