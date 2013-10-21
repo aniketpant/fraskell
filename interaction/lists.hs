@@ -1,14 +1,19 @@
+{-
+Write a program that will repeatedly ask the user for numbers until she
+types in zero, at which point it will tell her the sum of all the numbers,
+the product of all the numbers, and, for each number, its factorial.
+-}
+
 module Main where
 
 import System.IO
 
 main = do
   hSetBuffering stdin LineBuffering
-  let list = askForNumber
-  list
-  let total = sum list
-  putStrLn total
-  --putStrLn("The sum is " ++ total)
+  list <- askForNumber
+  putStrLn("The sum is " ++ show(sum list))
+  putStrLn("The product is " ++ show(foldl (*) 1 list))
+  mapM_ putStrLn [show a ++ " factorial is " ++ show(factorial a) | a <- list]
 
 askForNumber = do
   putStrLn "Give me a number (or 0 to stop):"
@@ -21,6 +26,5 @@ askForNumber = do
       return (number : rest)
 
 factorial :: Int -> Int
-factorial x
-  | x == 0    = 1
-  | otherwise = x * factorial(x-1)
+factorial 1 = 1
+factorial x = x * factorial(x-1)
