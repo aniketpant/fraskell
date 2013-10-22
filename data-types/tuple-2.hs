@@ -8,10 +8,11 @@ You will need to use the Either type to represent this.
 
 module Main where
 
-data Tuple a b c d  = One a
-                    | Two a b
-                    | Three a b c
-                    | Four a b c d deriving Show
+data Tuple a b c d
+  = One a
+  | Two a b
+  | Three a b c
+  | Four a b c d deriving Show
 
 main = do
   let input1 = One    1

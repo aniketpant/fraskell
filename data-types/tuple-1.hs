@@ -9,10 +9,11 @@ tuple holding only two elements).
 
 module Main where
 
-data Tuple a b c d =  One a
-                    | Two a b
-                    | Three a b c
-                    | Four a b c d
+data Tuple a b c d
+  = One a
+  | Two a b
+  | Three a b c
+  | Four a b c d
 
 main = do
   let input1 = One 1

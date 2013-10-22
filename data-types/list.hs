@@ -6,8 +6,9 @@ Don't worry about exceptional conditions on the first two.
 
 module Main where
 
-data List a   = Nil
-              | Cons a (List a) deriving Show
+data List a
+  = Nil
+  | Cons a (List a) deriving Show
 
 main = do
   let input = Cons 1 (Cons 2 Nil)
