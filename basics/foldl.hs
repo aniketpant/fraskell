@@ -1,5 +1,5 @@
 {-
-We’ve seen how to calculate sums and products using folding functions. Given
+We've seen how to calculate sums and products using folding functions. Given
 that the function max returns the maximum of two numbers, write a function
 using a fold that will return the maximum value in a list (and zero if the
 list is empty). So, when applied to [5,10,2,8,1] it will return 10. Assume

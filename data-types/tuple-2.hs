@@ -1,8 +1,8 @@
 {-
 Based on our definition of Tuple from the previous exercise, write a function
-which takes a Tuple and returns either the value (if it’s a one-tuple), a
-Haskell-pair (i.e., (’a’,5)) if it’s a two-tuple, a Haskell-triple if it’s
-a three-tuple or a Haskell-quadruple if it’s a four-tuple.
+which takes a Tuple and returns either the value (if it's a one-tuple), a
+Haskell-pair (i.e., ('a',5)) if it's a two-tuple, a Haskell-triple if it's
+a three-tuple or a Haskell-quadruple if it's a four-tuple.
 You will need to use the Either type to represent this.
 -}
 
